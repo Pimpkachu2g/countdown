@@ -1,0 +1,221 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./filip-bunkens-R5SrmZPoO40-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper {
+    width: 90%;
+    height: 60%;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow:  5px 5px 10px #666666, 
+                -5px -5px 10px #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    max-width: 1200px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+#wrapper .time {
+    height: 250px;
+    width: 250px;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 2px 2px 5px #666666, 
+                inset -2px -2px 5px #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#wrapper .time * {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#wrapper .time h1 {
+    font-size: min(9vw, 100px);
+    color: rgba(100, 100, 100, 0.8);
+    align-items: center;
+    display: flex;
+    height: 70%;
+}
+
+#wrapper .time p {
+    color:rgb(218,165,32);
+    font-size: 2rem;
+    height: 30%;
+    align-items: flex-start;
+}
+
+#wrapper > h1 {
+    position: absolute;
+    top: 40px;
+    color: rgba(100, 100, 100, 0.9);
+}
+
+#wrapper > h1,
+p {
+    font-family: 'Lobster', cursive;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    box-sizing: content-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(./filip-bunkens-R5SrmZPoO40-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wrapper {
+    width: 90%;
+    height: 50%;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow:  5px 5px 10px #666666, 
+                -5px -5px 10px #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    max-width: 1200px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+#wrapper > h1 {
+    width: 100%;
+    text-align: center;
+    color: rgba(100, 100, 100, 0.9);
+    margin-top: 40px;
+    font-size: 4rem;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 30px;
+}
+
+#wrapper .time {
+    height: 200px;
+    width: 200px;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.1);
+    /* box-shadow: inset 2px 2px 5px #666666, 
+                inset -2px -2px 5px #ffffff; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 40px 40px 40px;
+}
+
+#wrapper .time * {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#wrapper .time h1 {
+    height: 70%;
+    align-items: flex-end;
+    font-size: 5.5rem;
+    color: rgba(100, 100, 100, 0.8);
+}
+
+#wrapper .time p {
+    height: 30%;
+    color:rgb(218,165,32);
+    font-size: 2rem;
+    align-items: center;
+}
+
+@media (max-width: 1244px) {
+    #wrapper {
+        height: 90vh;
+        justify-content: space-around;
+    }
+    #wrapper .time {
+        width: 300px;
+    }
+}
+
+@media (max-width: 850px) {
+    #wrapper {
+        border-radius: 0;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+    }
+    #wrapper .time {
+        padding: 0px;
+        width: calc(18vw + 10vh);
+        height: calc(18vw + 10vh);
+    }
+    #wrapper .time h1 {
+        font-size: 4rem;
+    }
+    #wrapper .time p {
+        font-size: 1.5rem;
+    }
+    #wrapper > h1 {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 304px) {
+    #wrapper,
+    html,
+    body {
+        overflow: auto;
+    }
+}

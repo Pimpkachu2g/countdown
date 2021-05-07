@@ -19,10 +19,10 @@ function countdown () {
     let newYearsEve = new Date(fullDate);
     let totalSeconds = (newYearsEve - date) / 1000;
 
-    let days = Math.round(totalSeconds / 3600 / 24);
-    let hours = Math.round(totalSeconds / 3600) % 24;
-    let minutes = Math.round(totalSeconds / 60) % 60;
-    let seconds = Math.round(totalSeconds) % 60;
+    let days = Math.floor(totalSeconds / (3600 * 24));
+    let hours = Math.floor(totalSeconds % (3600 * 24) / 3600);
+    let minutes = Math.floor(totalSeconds % 3600 / 60);
+    let seconds = Math.floor(totalSeconds % 60);
 
     daysElem.innerText = days;
     hoursElem.innerText = hours;
